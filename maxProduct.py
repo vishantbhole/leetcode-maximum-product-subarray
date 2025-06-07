@@ -15,7 +15,8 @@ class Solution(object):
             tmp = curMax * num
             curMax = max(num * curMax ,num * curMin, num)
             curMin = min(tmp ,num * curMin, num)
-            res = max(res,curMax)
+            #res = max(res,curMax)
+            res = max(res,curMax,curMin)
         return res
 
         
